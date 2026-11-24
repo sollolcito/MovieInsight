@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C181A48-E02C-4030-8EA0-EE1BE5FF11B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MovieInsight</RootNamespace>
+    <AssemblyName>MovieInsight</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="DatosGlobales.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAcercaDe.Designer.cs">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmAgregarGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmAgregarGenero.Designer.cs">
+      <DependentUpon>frmAgregarGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmListadoGeneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmListadoGeneros.Designer.cs">
+      <DependentUpon>frmListadoGeneros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaGenero.Designer.cs">
+      <DependentUpon>frmConsultaGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmRegistrarVisualizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmRegistrarVisualizacion.Designer.cs">
+      <DependentUpon>frmRegistrarVisualizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaVisualizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmConsultaVisualizaciones.Designer.cs">
+      <DependentUpon>frmConsultaVisualizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmVisualizacionesMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmVisualizacionesMes.Designer.cs">
+      <DependentUpon>frmVisualizacionesMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmVisualizacionesGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmVisualizacionesGenero.Designer.cs">
+      <DependentUpon>frmVisualizacionesGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmEstadisticasMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmEstadisticasMes.Designer.cs">
+      <DependentUpon>frmEstadisticasMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmEstadisticasGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmEstadisticasGenero.Designer.cs">
+      <DependentUpon>frmEstadisticasGenero.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAcercaDe.resx">
+      <DependentUpon>frmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmAgregarGenero.resx">
+      <DependentUpon>frmAgregarGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmListadoGeneros.resx">
+      <DependentUpon>frmListadoGeneros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultaGenero.resx">
+      <DependentUpon>frmConsultaGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmRegistrarVisualizacion.resx">
+      <DependentUpon>frmRegistrarVisualizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmConsultaVisualizaciones.resx">
+      <DependentUpon>frmConsultaVisualizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmVisualizacionesMes.resx">
+      <DependentUpon>frmVisualizacionesMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmVisualizacionesGenero.resx">
+      <DependentUpon>frmVisualizacionesGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmEstadisticasMes.resx">
+      <DependentUpon>frmEstadisticasMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmEstadisticasGenero.resx">
+      <DependentUpon>frmEstadisticasGenero.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\assets\principal\banner_movieinsight.png">
+      <Link>assets\principal\banner_movieinsight.png</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

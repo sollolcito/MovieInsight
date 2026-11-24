@@ -1,0 +1,3 @@
+Banner cinematográfico generado para MovieInsight.
+El .csproj copia assets/principal/banner_movieinsight.png al directorio de salida de la aplicación.
+No mover la imagen fuera de la estructura del proyecto.
