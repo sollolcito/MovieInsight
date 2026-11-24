@@ -63,9 +63,9 @@ Para utilizar la carga de ejemplo, ingresar a **Sistema → Carga automática de
 
 ## Organización del repositorio
 
-- `MovieInsight_Proyecto_Inicial/`: archivos del proyecto subido desde Visual Studio, incluidos formularios y código fuente.
-- `src/`: documentación complementaria sobre el código fuente.
-- `assets/`: información sobre los recursos gráficos.
+- `MovieInsight.sln`: solución principal de Visual Studio.
+- `src/MovieInsight/`: proyecto, formularios, registros y lógica de la aplicación.
+- `assets/principal/`: banner y recursos gráficos de la ventana principal.
 - `docs/`: documentación del trabajo.
 - `.gitignore`: exclusión de archivos temporales del entorno de desarrollo.
 
