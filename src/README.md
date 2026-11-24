@@ -4,9 +4,9 @@ Esta sección reúne información técnica sobre la implementación del sistema 
 
 ## Dónde está el proyecto
 
-La versión del proyecto enviada desde Visual Studio se encuentra en la carpeta **`MovieInsight_Proyecto_Inicial/`** del repositorio.
+La solución **`MovieInsight.sln`** está en la raíz del repositorio. El proyecto y los formularios están organizados en **`src/MovieInsight/`**.
 
-Para trabajar con el código, buscá allí la solución `.sln` y abrila desde Visual Studio. No es necesario crear un proyecto nuevo.
+Para trabajar con el código, abrí la solución desde Visual Studio. No es necesario crear un proyecto nuevo.
 
 ## Componentes principales
 
