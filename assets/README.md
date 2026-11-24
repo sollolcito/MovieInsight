@@ -1,13 +1,25 @@
-# Recursos gráficos MovieInsight
+# Recursos gráficos de MovieInsight
 
-Se reservará esta carpeta para los recursos `.png` utilizados por los formularios. Estructura prevista:
+MovieInsight utiliza una identidad visual de temática cinematográfica, con una combinación de **azul oscuro y dorado** para los encabezados, controles y elementos destacados.
 
-- `principal/`: logo, iconos de navegación y banners.
-- `formularios/`: iconos de acciones (agregar, consultar, listado, registrar, estadísticas).
-- `generos/`: iconos de los diez géneros cinematográficos.
+## Organización
 
-El paquete inicial se preparó en el archivo descargable `MovieInsight_Assets.zip`. **Las imágenes aún deben incorporarse al repositorio**; este documento no implica que estén subidas.
+Los recursos visuales del proyecto pueden incluir:
 
-Para usarlas en Visual Studio: Propiedades del proyecto > Recursos > Agregar recurso > Archivo existente. Para PictureBox, establecer `SizeMode = Zoom`.
+- **`principal/`**: banner e imágenes relacionadas con la ventana principal.
+- **`formularios/`**: recursos visuales para ventanas secundarias, cuando corresponda.
+- **`generos/`**: imágenes o íconos temáticos, cuando corresponda.
 
-Los controles funcionales se construyen en el diseñador; las imágenes solo sirven como recursos visuales.
+La presencia de estas carpetas no implica que todos los formularios necesiten imágenes. Los controles de Windows Forms son los responsables de la funcionalidad del sistema.
+
+## Uso en Visual Studio
+
+Para utilizar los recursos en una instalación distinta, es importante mantener la estructura de carpetas y comprobar que las rutas de las imágenes sean válidas.
+
+El banner de la ventana principal se carga desde la carpeta de recursos correspondiente. Si se modifica la ubicación de los archivos o se distribuye la aplicación compilada, también deben copiarse los recursos utilizados en tiempo de ejecución.
+
+## Diseño
+
+El objetivo del diseño es mantener una presentación consistente y facilitar la lectura de los datos, sin alterar los requisitos funcionales del examen.
+
+[Volver al README principal](../README.md)
